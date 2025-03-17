@@ -123,9 +123,7 @@ public class MainActivity extends AppCompatActivity {
             resultText.setTextColor(ContextCompat.getColor(this, android.R.color.black));
             historyPanel.setBackgroundColor(ContextCompat.getColor(this, android.R.color.white));
             btnThemeToggle.setImageResource(R.drawable.ic_dark_mode);
-        }
-    }
-
+        /**/}}
     private void performConversion() {
         String inputStr = inputNumber.getText().toString().trim();
         if (inputStr.isEmpty()) {
