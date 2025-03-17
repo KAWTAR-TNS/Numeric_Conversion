@@ -150,10 +150,7 @@ public class MainActivity extends AppCompatActivity {
             hideKeyboard();
         } catch (NumberFormatException e) {
             resultText.setText("Invalid input for the selected base.");
-        }
-    }
-
-
+        }}
     private int getBase(String base) {
         switch (base) {
             case "Binary": return 2;
