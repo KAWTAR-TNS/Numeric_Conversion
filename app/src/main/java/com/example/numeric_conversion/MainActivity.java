@@ -42,14 +42,13 @@ public class MainActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
 
-        // Initialize UI components
         mainLayout = findViewById(R.id.main);
         historyPanel = findViewById(R.id.historyPanel);
         btnThemeToggle = findViewById(R.id.btnThemeToggle);
         btnHistory = findViewById(R.id.btnHistory);
         titleText = findViewById(R.id.titleText);
-        fromLabel = findViewById(R.id.textView); // "From" label
-        toLabel = findViewById(R.id.textView2); // "To" label
+        fromLabel = findViewById(R.id.textView);
+        toLabel = findViewById(R.id.textView2);
         inputNumber = findViewById(R.id.inputNumber);
         fromSpinner = findViewById(R.id.spinnerFrom);
         toSpinner = findViewById(R.id.spinnerTo);
@@ -57,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
         resultText = findViewById(R.id.conversionResult);
         historyListView = findViewById(R.id.historyList);
 
-        // Initialize history adapter
         historyAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, historyList);
         historyListView.setAdapter(historyAdapter);
 
@@ -67,22 +65,18 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        // Populate Spinners
         String[] bases = {"Decimal", "Hexadecimal", "Binary", "Octal"};
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, bases);
         fromSpinner.setAdapter(adapter);
         toSpinner.setAdapter(adapter);
 
-        // Conversion Button Click Listener
         convertButton.setOnClickListener(v -> performConversion());
 
-        // Toggle Dark/Light Mode
         btnThemeToggle.setOnClickListener(v -> {
             isDarkMode = !isDarkMode;
             applyTheme();
         });
 
-        // Show/Hide History Panel
         btnHistory.setOnClickListener(v -> {
             isHistoryOpen = !isHistoryOpen;
             historyPanel.setVisibility(isHistoryOpen ? View.VISIBLE : View.GONE);
@@ -93,7 +87,6 @@ public class MainActivity extends AppCompatActivity {
             historyPanel.setVisibility(isHistoryOpen ? View.VISIBLE : View.GONE);
         });
 
-// Hide history panel when clicking outside
         mainLayout.setOnClickListener(v -> {
             if (isHistoryOpen) {
                 historyPanel.setVisibility(View.GONE);
@@ -144,20 +137,16 @@ public class MainActivity extends AppCompatActivity {
         String toBase = toSpinner.getSelectedItem().toString();
 
         try {
-            // Convert input number from selected base
             int inputValue = Integer.parseInt(inputStr, getBase(fromBase));
-            // Convert to desired base
+
             String result = Integer.toString(inputValue, getBase(toBase)).toUpperCase();
 
-            // Display result
             resultText.setText("Result: " + result);
 
-            // Add to history
             String historyEntry = inputStr + " (" + fromBase + ") → " + result + " (" + toBase + ")";
             historyList.add(0, historyEntry);
             historyAdapter.notifyDataSetChanged(); // Update list without making it visible
 
-            // Hide keyboard
             hideKeyboard();
         } catch (NumberFormatException e) {
             resultText.setText("Invalid input for the selected base.");
@@ -171,8 +160,7 @@ public class MainActivity extends AppCompatActivity {
             case "Octal": return 8;
             case "Hexadecimal": return 16;
             default: return 10;
-        }
-    }
+        }}
 
     private void hideKeyboard() {
         View view = this.getCurrentFocus();
