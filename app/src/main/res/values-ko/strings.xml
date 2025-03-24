@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">숫자 변환</string>
+    <string name="title">숫자 변환하기</string>
+    <string name="from">에서</string>
+    <string name="to">으로</string>
+    <string name="result">결과 :</string>
+    <string name="convert">변환</string>
+    <string name="conversion_history">변환 기록</string>
+    <string name="enter_number">숫자를 입력하세요</string>
+    <string name="decimal">십진법</string>
+    <string name="hexadecimal">십육진법</string>
+    <string name="binary">이진법</string>
+    <string name="octal">팔진법</string>
+</resources>

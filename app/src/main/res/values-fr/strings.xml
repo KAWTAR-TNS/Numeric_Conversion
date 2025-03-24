@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Conversion_Numérique</string>
+    <string name="title">Convertir un nombre</string>
+    <string name="from">De</string>
+    <string name="to">À</string>
+    <string name="result">Résultat :</string>
+    <string name="convert">Convertir</string>
+    <string name="conversion_history">Historique des conversions</string>
+    <string name="enter_number">Entrer un nombre</string>
+    <string name="decimal">Décimal</string>
+    <string name="hexadecimal">Hexadécimal</string>
+    <string name="binary">Binaire</string>
+    <string name="octal">Octal</string>
+</resources>

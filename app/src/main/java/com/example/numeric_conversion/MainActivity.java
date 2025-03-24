@@ -65,7 +65,13 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        String[] bases = {"Decimal", "Hexadecimal", "Binary", "Octal"};
+       String[] bases = {
+                getString(R.string.decimal),
+                getString(R.string.hexadecimal),
+                getString(R.string.binary),
+                getString(R.string.octal)
+        };
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, bases);
         fromSpinner.setAdapter(adapter);
         toSpinner.setAdapter(adapter);

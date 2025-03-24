@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">تحويل الأرقام</string>
+    <string name="title">تحويل رقم</string>
+    <string name="from">من</string>
+    <string name="to">إلى</string>
+    <string name="result">النتيجة :</string>
+    <string name="convert">تحويل</string>
+    <string name="conversion_history">سجل التحويلات</string>
+    <string name="enter_number">أدخل رقماً</string>
+    <string name="decimal">عشري</string>
+    <string name="hexadecimal">سداسي عشري</string>
+    <string name="binary">ثنائي</string>
+    <string name="octal">ثماني</string>
+</resources>

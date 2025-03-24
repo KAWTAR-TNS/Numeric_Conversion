@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Numeric_Conversion</string>
+    <string name="title">Convert any number</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="result">Result:</string>
+    <string name="convert">Convert</string>
+    <string name="conversion_history">Conversion History</string>
+    <string name="enter_number">Enter number</string>
 </resources>
