@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ⵜⵉⵏⵙⴽⵉ ⵜⴰⵎⵙⵙⵉⵏⵉⵏ</string>
+    <string name="title">ⵙⵎⵙⵉ ⵢⴰⵏ ⵎⵉⵏⵢⴰⵡⴰⵏ</string>
+    <string name="from">ⵙⴰ</string>
+    <string name="to">ⴳⴰ</string>
+    <string name="result">ⵉⴳⵍⴰ :</string>
+    <string name="convert">ⴰⵙⵎⵙⵉ</string>
+    <string name="conversion_history">ⵜⵉⵏⵙⴽⵉ ⵜⴰⵎⵙⵙⵉⵏⵉⵏ</string>
+    <string name="enter_number">ⴰⴳⵍⴰ ⴰⵎⵉⵏⵢⴰⵡⴰⵏ</string>
+    <string name="decimal">ⴷⵉⵙⵎⴰⵍ</string>
+    <string name="hexadecimal">ⵀⵉⴽⵙⴰⴷⵉⵙⵎⴰⵍ</string>
+    <string name="binary">ⴱⵉⵏⴰⵔ</string>
+    <string name="octal">ⵓⵇⵜⴰⵍ</string>
+</resources>
